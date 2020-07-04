@@ -56,10 +56,14 @@ COMMANDS                                        *eunuch-commands*
                                                 *eunuch-:Find*
 :Cfind[!] {args}        Run `find` and load the results into the quickfix
                         list.  Jump to the first result unless ! is given.
+                        Can use `let g:Eunuch_find_executable` to specify a
+                        different tool than `find` (such as `fd`).
 
                                                 *eunuch-:Lfind*
 :Lfind[!] {args}        Run `find` and load the results into the location
                         list.  Jump to the first result unless ! is given.
+                        Can use `let g:Eunuch_find_executable` to specify a
+                        different tool than `find` (such as `fd`).
 
                                                 *eunuch-:Clocate*
                                                 *eunuch-:Locate*
